@@ -71,7 +71,7 @@ for a in range(Q):
     if L != 0:
         for i in range(0,2**N,wid):
             for j in range(0,2**N,wid):
-                for d in range(L):
+                for d in range((2**L)//2):
                     sx,sy = j+1*d, i+1*d
                     rot(sx,sy,wid-(2*d))
     candi = []
