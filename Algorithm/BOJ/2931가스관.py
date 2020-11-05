@@ -18,11 +18,7 @@ def blank(x,y):
 
 for i in range(R):
     for j in range(C):
-        if blocks[i][j] == 'M':
-            sx,sy =  j, i
-        elif blocks[i][j] == 'Z':
-            ex,ey = j, i
-        elif blocks[i][j] != '.':
+        if blocks[i][j] != '.':
             if blocks[i][j] == '|':
                 for k in [0,2]:
                     nx,ny = j +dx[k], i +dy[k]
