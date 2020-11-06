@@ -33,33 +33,16 @@ while cnt < N:
         if dist[next][j] != 10001:
             if G[j] > G[next] +dist[next][j]:
                 G[j] = G[next] +dist[next][j]
-
-
-flag = 1
-if 99999999999 in G:
-    flag = 0
-
-for i in G:
-    if i*2 > X :
-        flag = 0
+cnt = 1
+s = 0
+G.sort()
+for i in range(1,N):
+    if G[i] *2 > X:
+        cnt = -1
         break
-
-if flag:
-    cnt = 1
-    s = 0
-    G.sort()
-    for i in range(1,N):
-        if G[i] *2 > X:
-            cnt = -1
-            break
-        if s+G[i] <= X//2:
-            s += G[i]
-        else:
-            s = G[i]
-            cnt += 1
-    print(cnt)
-
-
-
-else:
-    print(-1)
+    if s+G[i] <= X//2:
+        s += G[i]
+    else:
+        s = G[i]
+        cnt += 1
+print(cnt)
