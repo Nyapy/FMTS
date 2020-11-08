@@ -7,9 +7,9 @@ def search(v):
     was = [0 for _ in range(N)]
     q = deque()
     q. append(v)
-    touch = []
+    touch =[]
     while q:
-        t = q.popleft()
+        t= q.popleft()
         touch.append(t)
         for i in range(N):
             if board[t][i] and was[i] == 0:
