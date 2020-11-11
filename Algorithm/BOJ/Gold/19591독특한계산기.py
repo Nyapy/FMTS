@@ -2,6 +2,8 @@ import sys
 
 sys.stdin = open('19591.txt')
 
+## 두군데나 실수함, 기억하자!!!0
+
 sik = list(input())
 
 def det_oper(a,su,su2):
