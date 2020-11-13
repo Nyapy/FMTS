@@ -53,14 +53,13 @@ for i in range(len(sik2)-1,-1,-1):
     else:
         if opers:
             now = check(sik2[i])
-            while opers and now < check(opers[-1]):
+            while opers and now <= check(opers[-1]):
                 cal.append(opers.pop())
             opers.append(sik2[i])
         else:
             opers.append(sik2[i])
 while opers:
     cal.append(opers.pop())
-
 stack = []
 for a in cal:
     if type(a) == int:
@@ -68,6 +67,6 @@ for a in cal:
     else:
         num2 = stack.pop()
         num1 = stack.pop()
+        stack.append(calcul(num1, num2, a))
 
-        stack.append(calcul(num1,num2,a))
 print(stack[0])
