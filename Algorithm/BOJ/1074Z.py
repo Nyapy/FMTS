@@ -26,3 +26,8 @@ def Z(x,y,z, s):
 Z(x,y,2**N,0)
 
 print(ans)
+
+# 1등 코드; 3줄
+# n,*t=map(int,input().split())
+# r,c=map(lambda x:int(bin(x)[2:],4),t)
+# print(2*r+c)
