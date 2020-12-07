@@ -14,18 +14,21 @@ for tc in range(1,T+1):
         gunmul[X][Y] = 1
     W = int(input())
 
-    bulid = [-1 for _ in range(N+1)]
+    bulid = [0 for _ in range(N+1)]
     time = [0 for _ in range(N+1)]
     for _ in range(N):
         ing = -1
         for i in range(1,N+1):
             flag = 1
-            if bulid[i] == -1: # 안지어진 건물 중에
+            if bulid[i] == 0: # 안지어진 건물 중에
                 for j in range(1,N+1):
                     if i == j : continue
-                    if not (gunmul[j][i] and bulid[j]==-1 ):
+                    if gunmul[j][i] == 0 : continue
+                    if not (gunmul[j][i] and bulid[j] ):
                         flag =0
                         break
+            else:
+                continue
             if flag:
                 ing = i
                 break
