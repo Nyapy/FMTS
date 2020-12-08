@@ -5,12 +5,12 @@ sys.stdin = open('1005.txt')
 T = int(input())
 
 for tc in range(1,T+1):
-    N,K = map(int, input().split())
-    D = [0]+list(map(int, input().split()))
+    N,K = map(int, sys.stdin.readline().split())
+    D = [0]+list(map(int, sys.stdin.readline().split()))
 
     gunmul = [[0 for _ in range(N+1)] for _ in range(N+1)]
     for _ in range(K):
-        X,Y = map(int, input().split())
+        X,Y = map(int, sys.stdin.readline().split())
         gunmul[X][Y] = 1
     W = int(input())
 
