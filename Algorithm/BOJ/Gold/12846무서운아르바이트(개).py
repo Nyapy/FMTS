@@ -10,18 +10,24 @@ stack = []
 
 ans = 0
 for i in range(n):
-    if i == 0 :
-        stack.append([i,salary[i]])
+    while stack and salary[stack[-1]] > salary[i]:
+        money = salary[stack.pop()]
+        days = i
+        if stack :
+            days = i-stack[-1] - 1
 
-    else:
-        if salary[i] < stack[-1][1]:
-            row, gab = stack.pop()
-            if (i-row)*gab > ans:
-                ans = (i-row)*gab
+        if ans < days*money:
+            ans = days*money
 
-            stack.append([row,salary[i]])
+    stack.append(i)
 
-        else:
-            stack.append([i,salary[i]])
+while stack :
+    money = salary[stack.pop()]
+    days = n
+    if stack:
+        days = n-stack[-1]-1
+
+    if ans < money*days:
+        ans = money*days
 
 print(ans)
