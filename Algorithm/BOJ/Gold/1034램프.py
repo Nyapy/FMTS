@@ -2,11 +2,12 @@ import sys
 
 sys.stdin = open('1034.txt')
 
-N,M = map(int, input().split())
+N,M = map(int, sys.stdin.readline().split())
 
-lamp = [list(map(int, input())) for _ in range(N)]
+lamp = [list(map(int, sys.stdin.readline().strip())) for _ in range(N)]
 
 K = int(input())
+
 ans = 0
 
 def swich():
