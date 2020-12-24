@@ -30,7 +30,6 @@ for i in range(H):
             cnt[j] = 0
         break
 
-print(cnt)
 for i in range(H):
     l = 0
     r = N // 2
@@ -48,10 +47,11 @@ for i in range(H):
         for j in range(i+1,H):
             cnt[j] += N//2
         break
-print(cnt)
 ans = 0
+
+mm = min(cnt)
 for i in range(H):
-    if cnt[i] == min(cnt):
+    if cnt[i] == mm:
         ans += 1
 
-print(min(cnt), ans)
+print(mm, ans)
