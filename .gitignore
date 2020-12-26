@@ -149,4 +149,6 @@ dmypy.json
 pyvenv.cfg
 pip-selfcheck.json
 
+
+idpwd.txt
 # End of https://www.toptal.com/developers/gitignore/api/python,venv
