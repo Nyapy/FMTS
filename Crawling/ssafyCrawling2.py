@@ -30,7 +30,7 @@ driver.find_element_by_id('searchContNm').send_keys('aps')
 
 driver.find_element_by_xpath("//button[@onclick='fnSearch();']").click()
 
-driver.find_elements_by_xpath("//*[contains(text(), 'C반 APS 기본')]")[0].click()
+driver.find_elements_by_xpath("//*[contains(text(), 'C반 APS 응용')]")[0].click()
 
 driver.find_element_by_xpath("//span[@class='file-name']").click()
 
@@ -58,7 +58,7 @@ cnt = 1
 # urllib.request.urlretrieve(url, '123.jpg')
 # os.system("curl " + url + " > test.jpg")
 
-time.sleep(2)
+time.sleep(5)
 driver.get_screenshot_as_file("hi.png")
 # for i in driver.find_elements_by_class_name("background"):
 #     time.sleep(2)
@@ -68,7 +68,7 @@ driver.get_screenshot_as_file("hi.png")
 
 while 1:
     time.sleep(0.4)
-    driver.save_screenshot('APS/C/'+str(cnt)+'.png')
+    driver.save_screenshot('APS/C 응용/'+str(cnt)+'.png')
     # print(driver.find_element_by_class_name("background").get_attribute('src'))
     # driver.find_element_by_class_name("background").screenshot(str(cnt)+'.png')
     driver.find_elements_by_xpath("//button[@title='다음 페이지']")[0].click()
