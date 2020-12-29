@@ -1,16 +1,30 @@
 import sys
 
-# sys.stdin = open('1038.txt')
+sys.stdin = open('1038.txt')
 
 N = int(input())
 
-num = 0
-while True:
-    f = -1
-    ja = 0
-    snum = str(N)
+candi = range(10)
 
-    for i in range(len(snum)-1, -1, -1):
-        if snum > num:
-            
-    break
+print(candi)
+cnt = -1
+
+def descent(k, n, a):
+    global cnt
+    if a == 11:
+        return
+    if k == n:
+        cnt += 1
+        print(cnt)
+        print(number)
+        return
+
+    else:
+        for q in range(a, 10):
+            number[k] = candi[q]
+            descent(k+1,n, q+1)
+
+for i in range(1,10):
+    number = [-1] *i
+    descent(0,i,0)
+
