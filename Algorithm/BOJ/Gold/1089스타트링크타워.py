@@ -81,39 +81,20 @@ for _ in range(5):
 
 candi = [[] for _ in range(N)]
 for i in range(N):
-    for s in range(10):
-        flag = True
-        for j in range(5):
-            if not flag:
-                break
-            for k in range(3):
-                if sign[i][j][k] == '#':
+    check = [True for _ in range(10)]
+    for j in range(5):
+        for k in range(3):
+            if sign[i][j][k] == '#':
+                for s in range(10):
                     if numbers[s][j][k] == '.':
-                        flag = False
-        if flag:
-            candi[i].append(s)
+                        check[s] = False
+    for t in range(10):
+        if check[t]:
+            candi[i].append(t)
     if not candi[i]:
         break
 
 possible = ['' for _ in range(N)]
-
-candi_sum = 0
-candi_cnt = 0
-def dfs(n,k):
-    global candi_sum, candi_cnt
-    if k == n :
-        dap = ''
-        for x in possible:
-            dap+=x
-        dap = int(dap)
-        candi_sum += dap
-        candi_cnt += 1
-        return
-
-    else:
-        for z in range(len(candi[k])):
-            possible[k] = str(candi[k][z])
-            dfs(n,k+1)
 
 ans = 0
 for g in range(N):
@@ -122,5 +103,16 @@ for g in range(N):
 if ans == -1:
     print(-1)
 else:
-    dfs(N,0)
-    print(candi_sum/candi_cnt)
+    cnt = 0
+    jet =1
+    for i in range(N-1,-1,-1):
+        jet *= len(candi[i])
+        tem = 1
+        for j in range(N-1,-1,-1):
+            if i == j:
+                tem *= sum(candi[i])*(10**cnt)
+            else:
+                tem *= len(candi[j])
+        ans += tem
+        cnt += 1
+    print(ans/jet)
