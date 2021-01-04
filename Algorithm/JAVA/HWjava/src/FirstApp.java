@@ -44,7 +44,8 @@ public class FirstApp {
 // int double 데이터를 int 데이터로 명시적 형변환하여 3.15 소수점 아래를 제외한 정수 부분만을 i1 변수에 저장
 		System.out.println("d1 = i1의 형변환 " + i1);
 		
-	
+		long aa = 1;
+		System.out.println(aa);
 		
 	}
 
