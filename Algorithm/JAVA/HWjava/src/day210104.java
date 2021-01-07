@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class day210104 {
 
@@ -71,6 +72,9 @@ public class day210104 {
 		
 		int AA[] = {45, 10, 80, 100, 60};
 		System.out.println(AA[3]);
+		
+		int[][] ABC = {{1,2,3}, {2,4}, {3,5,5,5}};
+		System.out.println(Arrays.deepToString(ABC));
 	}
 
 }
