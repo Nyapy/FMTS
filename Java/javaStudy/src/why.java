@@ -29,6 +29,13 @@ public class why {
 			System.out.println("1~12의 숫자를 입력하세요");
 		
 		}
+		
+		int A, B;
+		A = 5;
+		B = 10;
+		System.out.println();
+		
+		
 
 	}
 
