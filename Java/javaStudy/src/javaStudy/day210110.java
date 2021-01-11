@@ -49,6 +49,7 @@ public class day210110 {
 		human OSB = new human("¿À¼¼ºÀ", 28);
 		
 		System.out.println(OSB.name);
+		System.out.println(OSB.a.d);
 
 	}
 
