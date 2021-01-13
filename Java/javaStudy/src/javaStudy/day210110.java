@@ -1,9 +1,20 @@
 package javaStudy;
 
 public class day210110 {
+	
 	public class Car{
 		String name;
 		int currentGear;
+		public int sum() {
+			int a;
+			a = 3;
+			return a ;
+		};
+		public int sum(int num1, int num2){
+		    System.out.println(num1+num2);
+		    return num1 + num2;
+		}
+
 		
 		void changeGear(int gear) {
 			System.out.println("기어를 " + gear + "단으로 변경");
@@ -21,6 +32,7 @@ public class day210110 {
 	
 	
 	public static void main(String[] args) {
+
 		
 		class AA {
 			int ia = 1;
@@ -34,7 +46,6 @@ public class day210110 {
 		
 		System.out.println(name.ia);
 		System.out.println(name.j);
-		
 		
 		class human{
 			String name;
