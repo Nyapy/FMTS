@@ -5,6 +5,9 @@ public class day210110 {
 	public class Car{
 		String name;
 		int currentGear;
+		final static int AA =5;
+		static final int AB =5;
+		
 		public int sum() {
 			int a;
 			a = 3;
@@ -32,7 +35,6 @@ public class day210110 {
 	
 	
 	public static void main(String[] args) {
-
 		
 		class AA {
 			int ia = 1;
@@ -60,7 +62,7 @@ public class day210110 {
 		human OSB = new human("¿À¼¼ºÀ", 28);
 		
 		System.out.println(OSB.name);
-		System.out.println(OSB.a.d);
+		System.out.println(OSB);
 
 	}
 
