@@ -27,6 +27,30 @@ public class day210115 {
 			System.out.println("없다");
 		}
 	}
+	
+	public static class Pair{
+		int x ;
+		int y ;
+		
+		Pair(int x, int y){
+			this.x = x;
+			this.y = y;
+		}
+	}
+
+	public static void swap(int x, int y) {
+		int tmp;
+		tmp = x;
+		x = y;
+		y = tmp;
+	}
+	
+	public static void swap(Pair p) {
+		int tmp;
+		tmp = p.x;
+		p.x = p.y;
+		p.y = tmp;
+	}
 
 	public static void main(String[] args) {
 		Test AA = new Test();
@@ -74,7 +98,24 @@ public class day210115 {
 				this.age = age;
 			}
 
-
+			public thisTest(int No, String name, int age, int salary) {
+				this(No, name, age);
+				this.salary = salary;
+			}
 		}
+		
+
+		
+		
+		int x = 10, y = 20;
+		Pair p = new Pair(x,y);
+		
+		System.out.println(x+ "와" +y);
+		System.out.println(p.x +"와" +p.y);
+		swap(x,y);
+		swap(p);
+		System.out.println("바뀐 후");
+		System.out.println(x+ "와" +y);
+		System.out.println(p.x +"와" +p.y);
 	}
 }
