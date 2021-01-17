@@ -26,11 +26,11 @@ driver.set_window_size(1600, 800)
 
 driver.find_element_by_xpath("//a[@href='/edu/lectureroom/openlearning/openLearningList.do']/span").click()
 
-driver.find_element_by_id('searchContNm').send_keys('aps')
+# driver.find_element_by_id('searchContNm').send_keys('aps')
+#
+# driver.find_element_by_xpath("//button[@onclick='fnSearch();']").click()
 
-driver.find_element_by_xpath("//button[@onclick='fnSearch();']").click()
-
-driver.find_elements_by_xpath("//*[contains(text(), 'C반 APS 기본')]")[0].click()
+driver.find_elements_by_xpath("//*[contains(text(), '5기_B반_Java(1)')]")[0].click()
 
 driver.find_element_by_xpath("//span[@class='file-name']").click()
 
