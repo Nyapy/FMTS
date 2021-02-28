@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Launchpad</title>
+    <meta charset="utf-8" />
+    <link href="css/lauchpad.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="pad">
+      <img src="images/pad.png" width="700" height="570">
+      <button id="play-btn">
+        <img src="images/play.png" width="50" height="50">
+      </button>
+      <button id="stop-btn">
+        <img src="images/stop.png" width="50" height="50">
+      </button>
+
+      <div class="cell-container">
+        <div class="cell green" id="cell1">
+          <div class="key">1</div>
+          <div class="instrument">Kick</div>
+        </div>
+
+        <div class="cell blue" id="cell2">
+          <div class="key">2</div>
+          <div class="instrument">Closed<br>Hi-hat</div>
+        </div>
+
+        <div class="cell blue" id="cell3">
+          <div class="key">3</div>
+          <div class="instrument">Open<br>Hi-hat</div>
+        </div>
+
+        <div class="cell red" id="cell4">
+          <div class="key">4</div>
+          <div class="instrument">Clap</div>
+        </div>
+
+        <div class="cell red" id="cell5">
+          <div class="key">5</div>
+          <div class="instrument">Snap</div>
+        </div>
+
+        <div class="cell blue" id="cell6">
+          <div class="key">6</div>
+          <div class="instrument">Crash</div>
+        </div>
+
+        <div class="cell green" id="cell7">
+          <div class="key">7</div>
+          <div class="instrument">Tom 1</div>
+        </div>
+
+        <div class="cell green" id="cell8">
+          <div class="key">8</div>
+          <div class="instrument">Tom 2</div>
+        </div>
+
+        <div class="cell blue" id="cell9">
+          <div class="key">9</div>
+          <div class="instrument">Tambourine</div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <script>
+      // 여기에 코드를 입력하세요.
+      document.addEventListener('keydown', playkey);
+      document.addEventListener('keyup', stopkey)
+      
+      function playkey(e) {
+        if(isNaN(e.key)){
+        }
+        else{ 
+          if (e.key == 0) return;
+          document.getElementById('cell'+e.key).classList.add('playing')
+          
+          if (e.key == 1){
+            var go = new Audio('audio/01_kick_drum.wav')
+          } else if (e.key == 2){
+            var go = new Audio('audio/02_closed_hihat.wav')
+          } else if (e.key == 3){
+            var go = new Audio('audio/03_open_hihat.wav')
+          } else if (e.key == 4){
+            var go = new Audio('audio/04_clap.wav')
+          } else if (e.key == 5){
+            var go = new Audio('audio/05_snap.wav')
+          } else if (e.key == 6){
+            var go = new Audio('audio/06_crash.wav')
+          } else if (e.key == 7){
+            var go = new Audio('audio/07_tom1.wav')
+          } else if (e.key == 8){
+            var go = new Audio('audio/08_tom2.wav')
+          } else if (e.key == 9){
+            var go = new Audio('audio/09_tambourine.wav')
+          }
+          
+          go.play()
+        }
+      }
+      function stopkey(e) {
+        if(isNaN(e.key)){
+        }
+        else{ 
+          if (e.key == 0) return;
+          document.getElementById('cell'+e.key).classList.remove('playing')
+        }
+      }
+    </script>
+  </body>
+</html>
