@@ -247,3 +247,324 @@ local.properties
 hs_err_pid*
 
 # End of https://www.toptal.com/developers/gitignore/api/java,eclipse
+
+
+
+# Created by https://www.toptal.com/developers/gitignore/api/c++,c
+# Edit at https://www.toptal.com/developers/gitignore?templates=c++,c
+
+### C ###
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+### C++ ###
+# Prerequisites
+
+# Compiled Object files
+*.slo
+
+# Precompiled Headers
+
+# Linker files
+
+# Debugger Files
+
+# Compiled Dynamic libraries
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+
+# Executables
+
+# End of https://www.toptal.com/developers/gitignore/api/c++,c
+
+# # Visual Studio 임시 파일 무시, 결과 빌드 및
+# # 인기있는 Visual Studio 추가 기능에 의해 생성 된 파일.
+
+# 사용자 별 파일
+* .suo
+* .user
+* .userosscache
+* .sln.docstates
+
+# 사용자 별 파일 (MonoDevelop / Xamarin Studio)
+* .userprefs
+
+# 빌드 결과
+[ Dd ] ebug /
+[ Dd ] ebugPublic /
+[ Rr ] elease /
+[ Rr ] eleases /
+x64 /
+x86 /
+bld /
+[ Bb ] in /
+[ 우 ] bj /
+
+# Visual Studio 2015 캐시 / 옵션 디렉터리
+.vs /
+# wwwroot에 프로젝트의 정적 파일을 생성하는 작업이있는 경우 주석 해제
+# wwwroot /
+
+# MSTest 테스트 결과
+[ Tt ] est [ Rr ] esult * /
+[ Bb ] uild [ Ll ] og. *
+
+# NUNIT
+* .VisualState.xml
+TestResult.xml
+
+# ATL 프로젝트의 빌드 결과
+[ Dd ] ebugPS /
+[ Rr ] eleasePS /
+dlldata.c
+
+# DNX
+project.lock.json
+유물 /
+
+* _i.c
+* _p.c
+* _i.h
+* .ilk
+* .meta
+* .obj
+* .pch
+* .pdb
+* .pgc
+* .pgd
+* .rsp
+* .sbr
+* .tlb
+* .tli
+* .tlh
+* .tmp
+* .tmp_proj
+* .log
+* .vspscc
+* .vssscc
+.builds
+* .pidb
+* .svclog
+* .scc
+
+# Chutzpah 테스트 파일
+_Chutzpah *
+
+# Visual C ++ 캐시 파일
+ipch /
+* .aps
+* .ncb
+* .opendb
+* .opensdf
+* .sdf
+* .cachefile
+
+# Visual Studio 프로파일 러
+* .psess
+* .vsp
+* .vspx
+* .sap
+
+# TFS 2012 로컬 작업 영역
+$ tf /
+
+# 안내 자동화 툴킷
+* .gpState
+
+# ReSharper는 .NET 코딩 추가 기능입니다.
+_ReSharper * /
+* . [ Rr ] e [ Ss ] 하퍼
+* .DotSettings.user
+
+# JustCode는 .NET 코딩 추가 기능입니다.
+.JustCode
+
+# TeamCity는 빌드 추가 기능입니다.
+_TeamCity *
+
+# DotCover는 코드 커버리지 도구입니다
+* .dotCover
+
+# 엔씨 런치
+_NC 런치 _ *
+. * 위기 * .local.xml
+nCrunchTemp_ *
+
+# 마이티 무스
+* .mm. *
+AutoTest.Net /
+
+# 웹 워크 벤치 (sass)
+.sass-cache /
+
+# Installshield 출력 폴더
+[ Ee ] xpress /
+
+# DocProject는 문서 생성기 추가 기능입니다.
+DocProject / buildhelp /
+DocProject / 도움말 / * .HxT
+DocProject / 도움말 / * .HxC
+DocProject / 도움말 / * .hhc
+DocProject / 도움말 / * .hhk
+DocProject / 도움말 / * .hhp
+DocProject / 도움말 / Html2
+DocProject / 도움말 / html
+
+# Click-Once 디렉터리
+게시 /
+
+# 웹 출력 게시
+* . [ PP ] ublish.xml
+* .azurePubxml
+# TODO : 웹 배포 설정을 확인하려면 다음 줄에 주석을 추가하십시오.
+# 그러나 데이터베이스 연결 문자열 (잠재적 암호 포함)은 암호화되지 않습니다.
+* .pubxml
+* .publishproj
+
+# NuGet 패키지
+* .nupkg
+# 패키지 복원으로 인해 패키지 폴더를 무시할 수 있습니다.
+** / 패키지 / *
+# MSBuild 대상으로 사용되는 build / 제외.
+! ** / 패키지 / 빌드 /
+# 필요한 경우 주석을 제거하지만 일반적으로 필요할 때 다시 생성됩니다.
+# ! ** / packages / repositories.config
+# NuGet v3의 project.json 파일은 무시할 수있는 파일을 더 많이 생성합니다.
+* .nuget.props
+* .nuget.targets
+
+# Microsoft Azure 빌드 출력
+csx /
+* .build.csdef
+
+# Microsoft Azure 에뮬레이터
+ecf /
+rcf /
+
+# Microsoft Azure ApplicationInsights 구성 파일
+ApplicationInsights.config
+
+# Windows Store 앱 패키지 디렉터리
+AppPackages /
+BundleArtifacts /
+
+# Visual Studio 캐시 파일
+# .cache로 끝나는 파일은 무시할 수 있습니다.
+* . [ Cc ] 통증
+# 하지만 .cache로 끝나는 디렉토리를 추적하세요
+! * . [ Cc ] 통증 /
+
+# 기타
+ClientBin /
+~ $ *
+* ~
+* .dbmdl
+* .dbproj.schemaview
+* .pfx
+* .publishsettings
+노드 모듈 /
+orleans.codegen.cs
+
+# RIA / Silverlight 프로젝트
+생성 _ 코드 /
+
+# 이전 프로젝트 파일 변환에서 파일 백업 및보고
+# 최신 Visual Studio 버전으로. 백업 파일은 필요하지 않습니다.
+# git ;-)
+_UpgradeReport_Files /
+백업 * /
+UpgradeLog * .XML
+UpgradeLog * .htm
+
+# SQL Server 파일
+* .mdf
+* .ldf
+
+# 비즈니스 인텔리전스 프로젝트
+* .rdl.data
+* .bim.layout
+* .bim_ * .settings
+
+# 마이크로 소프트 가짜
+FakesAssemblies /
+
+# GhostDoc 플러그인 설정 파일
+* .GhostDoc.xml
+
+# Visual Studio 용 Node.js 도구
+.ntvs_analysis.dat
+
+# Visual Studio 6 빌드 로그
+* .plg
+
+# Visual Studio 6 작업 영역 옵션 파일
+* .opt
+
+# Visual Studio LightSwitch 빌드 출력
+** / * .HTMLClient / GeneratedArtifacts
+** / * .DesktopClient / GeneratedArtifacts
+** / * .DesktopClient / ModelManifest.xml
+** / * .Server / GeneratedArtifacts
+** / * .Server / ModelManifest.xml
+_Pvt_Extensions
+
+# Paket 종속성 관리자
+.paket / paket.exe
+
+# 가짜-F # 만들기
+.fake /
