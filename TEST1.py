@@ -9,15 +9,15 @@ A = 5.0
 B = 3
 
 # print("%d 랑 %d" %(A,B))
-print("{:05.2f} 랑 {:.2f}".format(A,B))
+# print("{:05.2f} 랑 {:.2f}".format(A,B))
 
 def hi(a):
     return a*3
 
 li = [1,2,3]
 li2 = list(map(hi,li))
-print(hi(5))
-print(li2)
+# print(hi(5))
+# print(li2)
 # afdsnlfasnlff
 
 def fizzBuzz(n):
@@ -31,4 +31,9 @@ def fizzBuzz(n):
         else:
             print(n)
 
-fizzBuzz(15)
+
+거리 = [1,2,3]
+
+혜정 = 1
+
+print(혜정)
