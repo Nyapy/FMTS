@@ -37,3 +37,11 @@ def fizzBuzz(n):
 혜정 = 1
 
 print(혜정)
+
+print(2&3)
+
+
+a = 'azxcvsdf'
+print(a)
+a.sort()
+print(a)
