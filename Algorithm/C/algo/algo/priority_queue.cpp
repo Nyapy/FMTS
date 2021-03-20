@@ -1,15 +1,19 @@
 #include <vector>
 #include <queue>
 #include <iostream>
+#include <algorithm>
 using namespace std;
 
+struct node {
+	int x = 5;
+	int y;
+};
+
+bool cmp2(node c, node d) {
+	return c.y < d.y;
+}
+
 int main(void) {
-
-	struct node {
-		int x = 5;
-		int y;
-	};
-
 
 	struct cmp {
 		bool operator()(struct node a, struct node b) {
@@ -17,47 +21,47 @@ int main(void) {
 		}
 	};
 
-	priority_queue<node, vector<node>, cmp> ab;
+	priority_queue<node, vector<node>, cmp> salary;
 
-	struct node one;
-	one.x = 1;
-	one.y = 10;
+	node tem;
+	tem.x = 33;
+	tem.y = 44;
 
-	cout << one.x << "하이 " << one.y << '\n';
+	node tem2;
+	tem2.x = 33;
+	tem2.y = 555;
+	
+	salary.push(tem);
+	salary.push(tem2);
 
-	struct node two = { 2,0 };
+	node a = salary.top();
+	salary.pop();
+	node b = salary.top();
 
-	cout << two.x << "하이 " << two.y << '\n';
+	cout << a.x << "다음 " << b.y;
 
-	struct node three;
-	cout << three.x << "하이 " << three.y << '\n';
 
-	struct node four_six[3];
-	for (int i = 0; i < 3; i++) {
-		four_six[i].x = i;
-		four_six[i].y = i * 10;
+	node ar1;
+	ar1.x = 5;
+	ar1.y = 55;
+	node ar2 = { 2,22 };
+	node ar3 = { 1, 11 };
+
+	node arr[5];
+
+	arr[1] = ar1;
+	arr[2] = ar2;
+	arr[3] = ar3;
+	cout << "tetsstestststs=======================\n";
+	for (int i = 0; i < 5; i++) {
+		cout << i << "번째는 " << arr[i].y << "\n";
 	}
-	for (int i = 0; i < 3; i++) {
-		cout << four_six[i].x << "하이 " << four_six[i].y << "\n";
+	sort(arr, arr + 5, cmp2);
 
-	}
-	cout << "벡터테스트=============================\n";
-	vector<node> v_node(3);
-	for (int i = 0; i < 3; i++) {
-		cout << v_node[i].x << "하이 " << v_node[i].y << "\n";
-
-	}
-	for (int i = 0; i < 3; i++) {
-		v_node[i].x = i * 3;
-		v_node[i].y = i * 30;
+	cout << "tetsstestststs=======================\n";
+	for (int i = 0; i < 5; i++) {
+		cout << i<<"번째는 "<<arr[i].y << "\n";
 	}
 
-	struct node tem = {111,222};
-	v_node.push_back(tem);
-
-	for (int i = 0; i < 4; i++) {
-		cout << v_node[i].x << "하이 " << v_node[i].y << "\n";
-
-	}
 	return 0;
 }
