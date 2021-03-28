@@ -109,6 +109,8 @@ def solution(p,n):
     print(answer)
     return answer
 
-solution(p="AM 11:59:59", n=0)
+#solution(p="AM 11:59:59", n=0)
 
+print(chr(55197))
+print(chr(12611))
 # print(solution(P,N))

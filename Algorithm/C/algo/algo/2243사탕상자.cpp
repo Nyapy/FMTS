@@ -22,20 +22,28 @@ int put_candy(int num, int start, int end, int taste, int cnum) {
 	return tree[num] ;
 }
 
-int take_candy(int num, int start, int end, int taste) {
-	if (start > taste) return 0;
+void take_candy(int num, int start, int end, int rank) {
+	if (tem < rank) {
+		if (tem + tree[num] < rank) {
+			tem += tree[num];
+		}
+		else {
+			if (start == end) {
+				tem += tree[num];
+				//cout << "»çÅÁ¸À : " << start << " °³¼ö :" << tree[num] << "\n";
+				tree[num] --;
+				ans = start;
+			}
+			else {
 
-	if (start == end && start == taste) {
-		tree[num] --;
-		tem = num;
-		return tree[num];
+				take_candy(num * 2, start, (start + end) / 2, rank);
+				take_candy(num * 2+1, (start + end) / 2 + 1, end, rank);
+				tree[num] --;
+			}
+		}
 	}
-	if (taste > end) return tree[num];
 
-	int left = take_candy(num * 2, start, (start + end) / 2, taste);
-	int right = take_candy(num * 2 + 1, (start + end) / 2 + 1, end, taste);
-	tree[num] = left + right;
-	return tree[num];
+
 }
 
 int main(void) {
@@ -43,13 +51,12 @@ int main(void) {
 	cin >> N;
 	for (int i = 0; i < N; i++) {
 		cin >> A;
-		
+		tem = 0;
 		if (A == 1) {
-
+			tem = 0;
 			cin >> B;
-			int aa = take_candy(1, 1, 1000000, B);
-			int ab = tree[tem];
-			cout << aa-tree[tem]<<"\n";
+			take_candy(1, 1, 1000000, B);
+			cout << ans << "\n";
 		}
 		else if (A == 2) {
 			cin >> B >> C;
