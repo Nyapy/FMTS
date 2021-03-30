@@ -47,7 +47,9 @@ void take_candy(int num, int start, int end, int rank) {
 }
 
 int main(void) {
-	freopen("2243.txt", "r", stdin);
+	//freopen("2243.txt", "r", stdin);
+	ios::sync_with_stdio(false);
+	cin.tie(NULL);
 	cin >> N;
 	for (int i = 0; i < N; i++) {
 		cin >> A;
