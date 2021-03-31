@@ -33,6 +33,20 @@
 
 어떤 구간을 업데이트 했을때 그 아래 노드들을 바로 업데이트 하는 것이 아니라 lazy 값을 저장을 해뒀다가 나중에 방문했을때 업데이트 한다.
 
+```C++
+void update_lazy(vector<long long> &tree, vector<long long> &lazy, int node, int start, int end) {
+    if (lazy[node] != 0) {
+        tree[node] += (end-start+1)*lazy[node];
+        // leaf가 아니면
+        if (start != end) {
+            lazy[node*2] += lazy[node];
+            lazy[node*2+1] += lazy[node];
+        }
+        lazy[node] = 0;
+    }
+}
+```
+
 
 
 
