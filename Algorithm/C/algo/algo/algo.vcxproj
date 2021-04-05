@@ -127,6 +127,7 @@
     <ClCompile Include="1540내리막길.cpp" />
     <ClCompile Include="1244스위치켜고끄기.cpp" />
     <ClCompile Include="1753최단경로.cpp" />
+    <ClCompile Include="18892가장긴증가하는부분수열ks.cpp" />
     <ClCompile Include="2042구간합구하기.cpp" />
     <ClCompile Include="2243사탕상자.cpp" />
     <ClCompile Include="priority_queue.cpp" />

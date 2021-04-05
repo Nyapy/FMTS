@@ -42,5 +42,8 @@
     <ClCompile Include="주소테스트.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="18892가장긴증가하는부분수열ks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
