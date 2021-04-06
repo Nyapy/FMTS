@@ -42,7 +42,10 @@
     <ClCompile Include="주소테스트.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="18892가장긴증가하는부분수열ks.cpp">
+    <ClCompile Include="18892가장긴증가하는부분수열ks%28fail%29.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="binary_search_test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
