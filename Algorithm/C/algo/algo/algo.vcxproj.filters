@@ -48,5 +48,14 @@
     <ClCompile Include="binary_search_test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="covex hull.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="걸어서맛집까지.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mins 패키지관리시스템.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
