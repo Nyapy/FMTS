@@ -24,7 +24,7 @@
 //}
 //
 //int n, top;
-//Point data[100001], st[100001], p0;
+//Point dataa[100001], st[100001], p0;
 //
 ////정렬 기준 : 기준점을 기준으로 두 점을 ccw해서 시계방향에 있는 점이 우선순위가 높음.
 ////           ccw결과 값이 0일 경우 원점에 가까운 점 우선.
@@ -46,19 +46,19 @@
 //	p0.y = p0.x = 40001;
 //	for (int i = 1; i <= n; i++)
 //	{
-//		scanf("%d %d", &data[i].x, &data[i].y);
-//		if (p0.y > data[i].y) p0 = data[i];
-//		if (p0.y == data[i].y && p0.x > data[i].x) p0 = data[i];
+//		scanf("%d %d", &dataa[i].x, &dataa[i].y);
+//		if (p0.y > dataa[i].y) p0 = dataa[i];
+//		if (p0.y == dataa[i].y && p0.x > dataa[i].x) p0 = dataa[i];
 //	}
 //
 //	//각정렬
-//	sort(data + 1, data + n + 1, compare);
+//	sort(dataa + 1, dataa + n + 1, compare);
 //
 //	for (int i = 1; i <= n; i++)
 //	{
-//		while (top > 1 && ccw(st[top - 1], st[top], data[i]) <= 0)top--;
+//		while (top > 1 && ccw(st[top - 1], st[top], dataa[i]) <= 0)top--;
 //
-//		st[++top] = data[i];
+//		st[++top] = dataa[i];
 //	}
 //
 //	printf("%d", top);
