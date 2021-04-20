@@ -127,8 +127,19 @@
   <ItemGroup>
     <ClCompile Include="1.inputoutput.cpp" />
     <ClCompile Include="10.예식장서빙.cpp" />
+    <ClCompile Include="12.Sortlibrary.cpp" />
+    <ClCompile Include="13.회의실.cpp" />
+    <ClCompile Include="14.PriorityQueue.cpp" />
+    <ClCompile Include="15.Uglynumber.cpp" />
+    <ClCompile Include="16정중앙대학교cpp.cpp" />
+    <ClCompile Include="17.연쇄폭탄.cpp" />
+    <ClCompile Include="18.지게차운전.cpp" />
+    <ClCompile Include="18.프린터 스케쥴링 시스템.cpp" />
+    <ClCompile Include="19개구리 점프.cpp" />
+    <ClCompile Include="1일차 보너스 금고(2).cpp" />
     <ClCompile Include="1일차보너스(금고).cpp" />
     <ClCompile Include="2.monaegi.cpp" />
+    <ClCompile Include="20빌딩은나의것.cpp" />
     <ClCompile Include="3.사원 출입관리 시스템.cpp" />
     <ClCompile Include="4.글귀 찾기.cpp" />
     <ClCompile Include="5.할아버지의유산.cpp" />
@@ -136,7 +147,9 @@
     <ClCompile Include="7.blacklist.cpp" />
     <ClCompile Include="8.card발급기.cpp" />
     <ClCompile Include="9.slidingwindow.cpp" />
+    <ClCompile Include="sort.cpp" />
     <ClCompile Include="test.cpp" />
+    <ClCompile Include="why.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
