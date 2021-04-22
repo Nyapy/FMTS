@@ -90,5 +90,38 @@
     <ClCompile Include="1일차 보너스 금고(2).cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="21.사랑의스튜디오.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="22spy와조직도.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="23폭탄투하.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="24Bloom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="25좀비바이러스.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="26.친구만나러가는길.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="27.천지창조.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="28안나엘사.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="2일차(미로만들기).cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="29.이진탐색.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="30루트계산기.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
