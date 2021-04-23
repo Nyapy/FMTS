@@ -79,8 +79,9 @@
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
-      <LargeAddressAware>
-      </LargeAddressAware>
+      <LargeAddressAware>true</LargeAddressAware>
+      <StackReserveSize>9000000</StackReserveSize>
+      <StackCommitSize>9000000</StackCommitSize>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -159,6 +160,7 @@
     <ClCompile Include="35동전던지기.cpp" />
     <ClCompile Include="36알뜰 기차여행.cpp" />
     <ClCompile Include="37.무서운시어머니.cpp" />
+    <ClCompile Include="38.신규도로.cpp" />
     <ClCompile Include="4.글귀 찾기.cpp" />
     <ClCompile Include="5.할아버지의유산.cpp" />
     <ClCompile Include="6.초콜렛 선물.cpp" />
