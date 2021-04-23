@@ -152,6 +152,13 @@
     <ClCompile Include="2일차(미로만들기).cpp" />
     <ClCompile Include="3.사원 출입관리 시스템.cpp" />
     <ClCompile Include="30루트계산기.cpp" />
+    <ClCompile Include="31연료게이지.cpp" />
+    <ClCompile Include="32머리맞대기.cpp" />
+    <ClCompile Include="33인디언합창단.cpp" />
+    <ClCompile Include="34순환회로검사.cpp" />
+    <ClCompile Include="35동전던지기.cpp" />
+    <ClCompile Include="36알뜰 기차여행.cpp" />
+    <ClCompile Include="37.무서운시어머니.cpp" />
     <ClCompile Include="4.글귀 찾기.cpp" />
     <ClCompile Include="5.할아버지의유산.cpp" />
     <ClCompile Include="6.초콜렛 선물.cpp" />
