@@ -7,7 +7,7 @@ int T,N, M, A, B, C, K, t;
 
 struct node {
 	int city, dis, type;
-	//노드번호, 최소거리, 타입, 이전노드, 이전거리
+	//노드번호, 최소거리, 타입
 };
 
 struct go {
@@ -17,7 +17,7 @@ struct go {
 
 struct cmp {
 	bool operator()(go left, go right) {
-		return left.dis > left.dis;
+		return left.dis > right.dis;
 	}
 };
 
@@ -36,8 +36,8 @@ int main() {
 		cin >> N >> M >> K;
 
 
-		vector<node> path[20001];
-		vector<pair<int, int>> root[20001];
+		vector<node> path[20001]; //수송로 정보 저장
+		vector<pair<int, int>> root[20001]; //경로 저장
 
 		for (int i = 0; i < M; i++) {
 			cin >> A >> B >> C >> t;
@@ -46,9 +46,6 @@ int main() {
 		for (int i = 1; i <= K; i++) {
 			cin >> money[i];
 		}
-
-
-
 
 		//다익스트라
 		for (int i = 1; i <= N; i++) {
@@ -65,7 +62,7 @@ int main() {
 			if (D[city] >= dist) {
 				
 				D[city] = dist;
-				root[city].push_back(make_pair(from, len * money[type]));
+				root[city].push_back(make_pair(from, len * money[type])); //root에 (이전 노드, 거리*비용) 저장
 
 				for (int j = 0; j < path[city].size(); j++) {
 					int tem_city = path[city][j].city;
@@ -78,6 +75,7 @@ int main() {
 			}
 		}
 
+		// 저장된 경로 따라가면서 답에 더하기.(bfs로 끝점부터 1번까지 경로찾으면서 더함)
 		bool visited[20001];
 
 		ans = 0;
