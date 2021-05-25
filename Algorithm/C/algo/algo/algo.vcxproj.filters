@@ -72,5 +72,8 @@
     <ClCompile Include="210516pro도로정비.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="memoryTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -134,6 +134,7 @@
     <ClCompile Include="2243사탕상자.cpp" />
     <ClCompile Include="binary_search_test.cpp" />
     <ClCompile Include="covex hull.cpp" />
+    <ClCompile Include="memoryTest.cpp" />
     <ClCompile Include="mins 패키지관리시스템.cpp" />
     <ClCompile Include="pqSortTest.cpp" />
     <ClCompile Include="priority_queue.cpp" />
