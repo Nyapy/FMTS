@@ -114,3 +114,14 @@ def solution(p,n):
 print(chr(55197))
 print(chr(12611))
 # print(solution(P,N))
+
+
+p = [0,0,0,0]
+n = int(input())
+
+for i in range(n):
+    for j in range(1,4):
+        tem = int(input())
+        p[j] = max(tem,p[j])
+    print(p[1:4])
+print(p.index(max(p[1:4])))
