@@ -166,6 +166,7 @@
     <ClCompile Include="25418.cpp" />
     <ClCompile Include="4673.cpp" />
     <ClCompile Include="5344.cpp" />
+    <ClCompile Include="7662.cpp" />
     <ClCompile Include="9527.cpp" />
     <ClCompile Include="cfg.cpp" />
     <ClCompile Include="h2304.cpp" />
